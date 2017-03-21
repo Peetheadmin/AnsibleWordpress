@@ -12,11 +12,11 @@ A cloudformation template that accepts user inputs as parameters where applicabl
 
 **Approach**:
 
-Step 1: For this assessment, I set up a test environment on VMWare Workstation to install wordpress on localhost using ansible(I'm a Ubuntu Linux image)
+Step 1: For this assessment, I set up a test environment on VMWare Workstation to install wordpress on localhost using ansible(I'm a Ubuntu Linux image).
 
-Step 2: Created a playbook for the installation of Apache, MySQL, PHP, Wordpress in the test Environment
+Step 2: Created a playbook for the installation of Apache, MySQL, PHP, Wordpress in the test Environment.
 
-Step 3: After success of Step 2, I published this playbook on my GitHub account
+Step 3: After success of Step 2, I published this playbook on my GitHub account.
 
 Step 4: Built a CloudFormation Template with resources mentoined in the Deliverable,This CFT takes user input like username, password,etc; and sets this parameters to the EC2 instance.
 
@@ -26,13 +26,13 @@ Step 6: Tested the functioning of the CFT and published the Repository on GitHub
 
 **To Build the stack**:
 
-1. Download the CloudFormation.json in this repository https://github.com/sriramgaddipati/UbuntuAnsible
+1. Download  this repository https://github.com/sriramgaddipati/UbuntuAnsible .
 
-2. Create a stack using CloudFormation.json file
+2. Create a stack using CloudFormation.json file in cloud formation.
 
-3. Fill parameters of Stackname, DatabaseName, DBUser, DBPassword.. and choose an existing keypair for SSH connection
+3. Fill parameters of Stackname, DatabaseName, DBUser, DBPassword.. and choose an existing keypair for SSH connection.
 
-4. This User parameters will give you access to created mysqlDB and corresponding user on EC2 instance
+4. The User parameters will give you access to corresponding mysqlDB and user on EC2 instance built.
 
 **Output**:
 
