@@ -24,9 +24,9 @@ Step 5: In the cloud Formation Template, the Userdata section I installed necess
 
 Step 6: Tested the functioning of the CFT and published the Repository on GitHub.
 
-**To-Do**:
+**To Build the stack**:
 
-1. Download the CloudFormation.json in this repository
+1. Download the CloudFormation.json in this repository https://github.com/sriramgaddipati/UbuntuAnsible
 
 2. Create a stack using CloudFormation.json file
 
