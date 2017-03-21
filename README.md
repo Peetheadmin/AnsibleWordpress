@@ -16,7 +16,7 @@ Step 1: For this assessment, I set up a test environment on VMWare Workstation t
 
 Step 2: Created a playbook for the installation of Apache, MySQL, PHP, Wordpress in the test Environment.
 
-Step 3: After success of Step 2, I published this playbook on my GitHub account.
+Step 3: After success of Step 2, I pushed this playbook to my GitHub account.
 
 Step 4: Built a CloudFormation Template with resources mentoined in the Deliverable,This CFT takes user input like username, password,etc; and sets this parameters to the EC2 instance.
 
