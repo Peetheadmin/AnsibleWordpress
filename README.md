@@ -12,13 +12,13 @@ A cloudformation template that accepts user inputs as parameters where applicabl
 
 **Approach**:
 
-Step 1: For this assessment, I set up a test environment on VMWare Workstation to install wordpress on localhost using ansible(I'm a Ubuntu Linux image).
+Step 1: For this assessment, I set up a test environment on VMWare Workstation to install wordpress on localhost using ansible(using a Ubuntu Linux image).
 
 Step 2: Created a playbook for the installation of Apache, MySQL, PHP, Wordpress in the test Environment.
 
 Step 3: After success of Step 2, I pushed this playbook to my GitHub account.
 
-Step 4: Built a CloudFormation Template with resources mentoined in the Deliverable,This CFT takes user input like username, password,etc; and sets this parameters to the EC2 instance.
+Step 4: Built a CloudFormation Template with resources mentioned in the Deliverable.The CFT takes user input like username, password,etc; and sets this parameters to the EC2 instance.
 
 Step 5: In the cloud Formation Template, the Userdata section I installed necessary packages(aws-cli, cfn-heat ...) and downloaded the repository mentioned in Step3 from my GitHub account.
 
