@@ -20,6 +20,9 @@ Step 3: After success of Step 2, I pushed this playbook to my GitHub account.
 
 Step 4: Built a CloudFormation Template with resources mentioned in the Deliverable.The CFT takes user input like username, password,etc; and sets this parameters to the EC2 instance.
 
+
+<img width="1280" alt="parameter2userdata" src="https://cloud.githubusercontent.com/assets/19828746/24136992/1333b1ba-0de8-11e7-8719-117c5e317d21.png">
+
 Step 5: In the cloud Formation Template, the Userdata section I installed necessary packages(aws-cli, cfn-heat ...) and downloaded the repository mentioned in Step3 from my GitHub account.
 
 Step 6: Tested the functioning of the CFT and published the Repository on GitHub.
