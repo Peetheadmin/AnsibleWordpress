@@ -39,4 +39,5 @@ Step 6: Tested the functioning of the CFT and published the Repository on GitHub
 Stack up and running with requested parameters in the ec2 instance
 
 
+<img width="1280" alt="built stack" src="https://cloud.githubusercontent.com/assets/19828746/24136041/539ca676-0de3-11e7-9d24-b1d8a0611740.png">
 
