@@ -20,7 +20,7 @@ Step 3: After success of Step 2, I pushed this playbook to my GitHub account.
 
 Step 4: Built a CloudFormation Template with parameters(Name.Password,.,etc;) and resources(VPC,subnets.,etc;) mentioned in the rerqurirements
 
-Step 5: Installed necessary packages(git, ansible, aws-cli, cfn-heat ...) to download the repo(mentioned in step3), run playbook, wait handle and  referencing parameters in Userdata. 
+Step 5: Installed necessary packages(git, ansible, cfn-heat ...) to download the repo(mentioned in step3), run playbook, wait handle and  referencing parameters in Userdata. 
 
 <img width="1280" alt="parameter2userdata" src="https://cloud.githubusercontent.com/assets/19828746/24136992/1333b1ba-0de8-11e7-8719-117c5e317d21.png">
 
