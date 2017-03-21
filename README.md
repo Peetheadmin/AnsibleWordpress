@@ -1,4 +1,4 @@
-# UbuntuAnsible
+# CFT to automate installatin of Wordpress using Ansible
 
 Setup Wordpress on ubuntu linux EC2 instance using ansible and automate this using a cloud formation template
 
