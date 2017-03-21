@@ -48,18 +48,18 @@
 			"AllowedPattern": "[a-zA-Z][a-zA-Z0-9]*",
 			"ConstraintDescription": "must begin with a letter and contain only alphanumeric characters."
 		},
-		"DBUser": {
+		"EC2UserName": {
 			"NoEcho": "true",
-			"Description": "The WordPress database admin account username",
+			"Description": "This is also WordPress database admin account username",
 			"Type": "String",
 			"MinLength": "1",
 			"MaxLength": "16",
 			"AllowedPattern": "[a-zA-Z][a-zA-Z0-9]*",
 			"ConstraintDescription": "must begin with a letter and contain only alphanumeric characters."
 		},
-		"DBPassword": {
+		"EC2UserPassword": {
 			"NoEcho": "true",
-			"Description": "The WordPress database admin account password",
+			"Description": "This is also WordPress database admin account password",
 			"Type": "String",
 			"MinLength": "8",
 			"MaxLength": "41",
@@ -393,6 +393,17 @@
 						"Fn::Join": [
 							"", [
 								"#!/bin/bash -e\n",
+								"useradd '", {
+									"Ref": "EC2UserName"
+								}, "'\n",
+
+								"echo '", {
+									"Ref": "EC2UserName"
+								}, "':'", {
+									"Ref": "EC2UserPassword"
+								}, "'| /usr/sbin/chpasswd\n",
+
+
 								"apt-get update && apt-get install -y heat-cfntools\n",
 								"apt-get -y install software-properties-common awscli\n",
 								"apt-get install -y git\n",
@@ -403,13 +414,11 @@
 								"echo 'wp_mysql_db: ", {
 									"Ref": "DBName"
 								}, "' >> /tmp/UbuntuAnsible/roles/mysql/defaults/main.yml\n",
-
 								"echo 'wp_mysql_user: ", {
-									"Ref": "DBUser"
+									"Ref": "EC2UserName"
 								}, "' >> /tmp/UbuntuAnsible/roles/mysql/defaults/main.yml\n",
-
 								"echo 'wp_mysql_password: ", {
-									"Ref": "DBPassword"
+									"Ref": "EC2UserPassword"
 								}, "' >> /tmp/UbuntuAnsible/roles/mysql/defaults/main.yml\n",
 
 								"cd /tmp/UbuntuAnsible && ansible-playbook playbook.yml\n",
@@ -434,7 +443,7 @@
 				"Handle": {
 					"Ref": "WaitHandle"
 				},
-				"Timeout": "300"
+				"Timeout": "500"
 			}
 		}
 	},
