@@ -33,3 +33,10 @@ Step 6: Tested the functioning of the CFT and published the Repository on GitHub
 3. Fill parameters of Stackname, DatabaseName, DBUser, DBPassword.. and choose an existing keypair for SSH connection
 
 4. This User parameters will give you access to created mysqlDB and corresponding user on EC2 instance
+
+**Output**:
+
+Stack up and running with requested parameters in the ec2 instance
+
+
+
