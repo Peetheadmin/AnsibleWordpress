@@ -48,5 +48,8 @@ Stack up and running, able to access EC2 instance and MySQLDB with input usernam
 
 <img width="1280" alt="built stack" src="https://cloud.githubusercontent.com/assets/19828746/24136041/539ca676-0de3-11e7-9d24-b1d8a0611740.png">
 
+**Access wodpress using url located here**
+
+<img width="1257" alt="wordpress url" src="https://cloud.githubusercontent.com/assets/19828746/24271202/aaa93c1a-0fee-11e7-9e67-3183ff6e3691.png">
 
 
