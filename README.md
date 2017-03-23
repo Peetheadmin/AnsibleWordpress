@@ -20,6 +20,12 @@ Step 3: After success of Step 2, I pushed this playbook to my GitHub account.
 
 Step 4: Built a CloudFormation Template with parameters(Name.Password,.,etc;) and resources(VPC,subnets.,etc;) mentioned in the rerqurirements
 
+
+**Mapping between AWS Resources**
+
+<img width="573" alt="cft resource mapping" src="https://cloud.githubusercontent.com/assets/19828746/24269797/081cd75e-0fe9-11e7-85b1-757bce47ed18.png">
+
+
 Step 5: Installed necessary packages(git, ansible, cfn-heat ...) to download the repo(mentioned in step3), run playbook, wait handle and  referencing parameters in Userdata. 
 
 <img width="1280" alt="parameter2userdata" src="https://cloud.githubusercontent.com/assets/19828746/24136992/1333b1ba-0de8-11e7-8719-117c5e317d21.png">
@@ -40,6 +46,7 @@ Step 6: Tested the functioning of the CFT and pushed the Repository to GitHub ht
 
 Stack up and running, able to access EC2 instance and MySQLDB with input username and password. 
 
-
 <img width="1280" alt="built stack" src="https://cloud.githubusercontent.com/assets/19828746/24136041/539ca676-0de3-11e7-9d24-b1d8a0611740.png">
+
+
 
