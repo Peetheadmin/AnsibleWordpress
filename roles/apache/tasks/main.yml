@@ -1,6 +1,6 @@
 ---
 - name: Update apt cache
-  apt: update_cache=yes cache_valid_time=3600
+  yum: update_cache=yes cache_valid_time=3600
   sudo: yes
 
 
@@ -19,7 +19,7 @@
 
  
 - name: Install mysql-server
-  apt: name=mysql-server state=present
+  yum: name=mysql-server state=present
   sudo: yes
 
 - debconf:
@@ -37,14 +37,15 @@
 
 
 - name: Install required software
-  apt: name={{ item }} state=present
+  yum: name={{ item }} state=present
   sudo: yes
   with_items:
-    - apache2
-    #- mysql-server
-    - php-mysql
+   - httpd
     - php
-    - libapache2-mod-php
+    - php-mysql
+    - mysql-server
+    - mysql-devel
+    - gcc
     - php-mcrypt
     - python-mysqldb
 
